@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    margin : 0px;
+    padding: 0px;
+    font-family: 'Oswald';
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+    width: 100%;
+
+
+
+}
+.container{
+    display: flex;
+    
+    height: 80vh;
+    width: 50%;
+    
+
+    
+    box-shadow: -5px 10px 58px 0px rgba(0,0,0,0.75);
+}
+.after{
+    display: flex;
+    width: 100%;
+}
+.login{
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photo{
+    background-image: url("share.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+.email{
+ width:80%;
+ height: 30x;
+ margin: 10px;
+}
+.password{
+    width:80%;
+    
+ margin: 10px;
+}
+.button{
+    width: 50%;
+    height: 30px;
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.sucess{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+    </style>
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="after" id="after">
+        <div class="login" id="login">
+            <h1>LOGIN</h1>
+            <input class="email" type="email" placeholder="email" id="email">
+            <input class="password" type="password" placeholder="password" id="password">
+            <button class="button" onclick="login()" id="button">login</button>
+        </div>
+        <div class="photo"></div>
+        </div>
+        <div class="sucess" id="sucess">helloworld</div>
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
